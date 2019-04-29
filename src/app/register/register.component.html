@@ -1,0 +1,19 @@
+<div class="signup-form">
+<form [formGroup]= "registerForm">
+  <h2>Register</h2>
+  <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+      <div class="form-group">
+        <input type="email" class="form-control" formControlName="email" placeholder="Email" required="required">
+      </div>
+  <div class="form-group">
+          <input type="password" class="form-control" formControlName="password" placeholder="Password" required="required">
+      </div>
+      <div class="form-group">
+    <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="javascript:void()">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+  </div>
+  <div class="form-group">
+          <button type="submit" (click)="register()" class="btn btn-success btn-lg btn-block">Register Now</button>
+      </div>
+  </form>
+<div class="text-center">Already have an account? <a routerLink="/login">Sign in</a></div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="container-fluid">
+    <div style="margin-bottom: 2%"></div>
+    <div class="row">
+      <div class="col-md-5"></div>
+      <div class=" col-md-6">
+        <img src="../../assets/fivep_logo_black_labs.png" />
+      </div>
+    </div>
+    <div style="margin-bottom: 2%"></div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class=" col-md-6 text-center">
+        <h1>This is real time private chat</h1>
+        <h4>Made with love</h4>
+        <h6>By Five Points The Lab</h6>
+        <a  *ngIf="!userService.connectedUser" class="btn btn-primary" routerLink="/login"> Sign in  </a> <a class="btn btn-success"  *ngIf="!userService.connectedUser" routerLink="/register"> Sing up</a>
+        <a  *ngIf="userService.connectedUser" class="btn btn-primary" routerLink="/chat"> Go to chat  </a>
+      </div>
+    </div>
+
+  </div>
+</div>
